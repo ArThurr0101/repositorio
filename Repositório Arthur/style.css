@@ -1,0 +1,126 @@
+@font-face{
+    font-family: font1;
+    src: url(DonGraffiti.otf);
+}
+
+body {
+    margin: 0;
+    font-family: font1;
+}
+
+nav {
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+}
+
+.nav-img {
+    filter: blur(5px); /* ou qualquer valor de desfoque que desejar */
+    position: absolute; /* posiciona a imagem sobreposta à barra de navegação */
+    top: 0; /* alinha a imagem ao topo da barra de navegação */
+    left: 0; /* alinha a imagem à esquerda da barra de navegação */
+    width: 100%; /* garante que a imagem ocupe toda a largura da barra de navegação */
+    height: 125px; /* garante que a imagem ocupe toda a altura da barra de navegação */
+    z-index: -1; /* move a imagem para trás dos elementos da barra de navegação */
+}
+
+
+.nav-buttons {
+    display: flex;
+    list-style-type: none; /* Remove a marcação de lista */
+    padding: 0; /* Remove o preenchimento */
+}
+
+.nav-buttons li {
+    margin: 0 20px; /* Espaçamento entre os botões */
+}
+
+.nav-buttons a {
+    color: #333;
+    text-decoration: none;
+    font-family: font1;
+    font-size: 50px;
+}
+
+.nav-buttons a:hover {
+    border-bottom: 2px solid rgb(76, 175, 80); /* Adiciona uma linha inferior ao passar o mouse */
+}
+
+.container {
+    display: flex;
+}
+
+.text1 {
+    color: #000000;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+.image-container {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    display: flex;
+    justify-content: flex-end; /* Alinha a imagem à direita */
+    align-items: center; /* Centraliza verticalmente a imagem */
+    margin-right: 150px; /* Margem à direita para separar a imagem do texto */
+}
+
+.text1 h1 {
+    font-size: 60px;
+    margin-left: 40px;
+    letter-spacing: 8px;
+}
+
+.text1 h2 {
+    letter-spacing: 8px;
+    font-size: 30px;
+    margin-left: 40px;
+    word-spacing: 5px;
+    color: #333;
+}
+
+.text2 {
+    color: #000000;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.text2 h1 {
+    font-family: font1;
+    color: #333;
+    font-size: 70px;
+}
+
+.text2 h2 {
+    font-size: 40px;
+}
+
+.text2 a{
+    text-decoration: none;
+    color: #333;
+}
+.codigo-span {
+    color: black; /* Cor do texto */
+    margin-right: 5px; /* Margem à direita para separar o sublinhado do texto */
+}
+
+.codigo-span::after {
+    content: ""; /* Adicionar um pseudo-elemento para o sublinhado */
+    display: block;
+    border-bottom: 2px solid #4CAF50; /* Cor e espessura do sublinhado ao passar o mouse */
+    margin-top: 2px; /* Ajuste fino para alinhar o sublinhado */
+    margin-left: 38.8%;
+    margin-right: 40.1%;
+}
+
+
+
+
+.abaixo-da-img-sublinhado{
+    text-align: left; /* Centraliza o texto horizontalmente */
+    font-size: 50px; /* Tamanho do texto */
+    margin-left: 155px;
+
+}
